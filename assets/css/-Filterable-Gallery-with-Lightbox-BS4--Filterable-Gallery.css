@@ -1,0 +1,95 @@
+.filtr-container {
+  margin: 0 -4px;
+}
+
+.filtr-item {
+  padding: 4px;
+}
+
+.filtr-controls {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 30px 0 15px;
+}
+
+.filtr-controls span {
+  display: inline-block;
+  margin: 10px 15px;
+  cursor: pointer;
+  padding: 5px 0;
+  position: relative;
+  color: #777;
+}
+
+.filtr-controls span:hover, .filtr-controls span.active {
+  color: #000;
+}
+
+.filtr-controls span:after {
+  content: ' ';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background: transparent;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.filtr-controls span.active:after {
+  width: 100%;
+  left: 0;
+  background: #000;
+}
+
+@media (max-width:479px) {
+  .filtr-item {
+    width: 100%;
+  }
+}
+
+.filtr-item > a {
+  position: relative;
+  display: block;
+}
+
+.filtr-item > a:before, .filtr-item > a:after {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.filtr-item > a:before {
+  content: ' ';
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+
+.filtr-item:hover > a:before {
+  background: rgba(0,0,0,.2);
+}
+
+.filtr-item > a:after {
+  font-family: FontAwesome;
+  content: '\f0fe';
+  position: absolute;
+  z-index: 11;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -17px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 40px;
+  opacity: 0;
+}
+
+.filtr-item:hover > a:after {
+  opacity: .5;
+}
+

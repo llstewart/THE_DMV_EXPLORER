@@ -1,0 +1,29 @@
+div.jumbotron.carousel-hero {
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+div.jumbotron.hero-nature {
+  background-image: url('../../assets/img/images/pink.jpg');
+}
+
+div.jumbotron.hero-photography {
+  background-image: url('../../assets/img/images/alero.jpg');
+}
+
+div.jumbotron.hero-technology {
+  background-image: url('../../assets/img/IMG_7911.jpg');
+}
+
+p.hero-subtitle {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 10px 15px;
+  color: #fff;
+}
+

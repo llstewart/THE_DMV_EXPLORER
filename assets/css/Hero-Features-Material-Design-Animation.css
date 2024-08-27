@@ -1,0 +1,20 @@
+.card {
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-body {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  padding-top: 3rem;
+}
+

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html data-bs-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+<title>Student Events - dmvexplorer</title>
+<meta content="Eat.Explore.Enjoy" name="twitter:description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.dmvexplorer.com/assets/img/IMG_1931 (1).jpg" name="twitter:image"/>
+<meta content="https://www.dmvexplorer.com/assets/img/IMG_1931 (1).jpg" property="og:image"/>
+<meta content="Dmvexplorer" name="twitter:title"/>
+<link href="assets/img/logo-transparent-png.png" rel="icon" sizes="4000x2850" type="image/png"/>
+<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet"/>
+<link href="assets/css/swiper-icons.css" rel="stylesheet"/>
+<link href="assets/css/aos.min.css" rel="stylesheet"/>
+<link href="assets/css/animate.min.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet"/>
+<link href="assets/css/college.css" rel="stylesheet"/>
+<link href="assets/css/-Filterable-Gallery-with-Lightbox-BS4--Filterable-Gallery.css" rel="stylesheet"/>
+<link href="assets/css/Animated-Typing-With-Blinking.css" rel="stylesheet"/>
+<link href="assets/css/Articale-List-With-Image-Zoom.css" rel="stylesheet"/>
+<link href="assets/css/Articles-Cards-images.css" rel="stylesheet"/>
+<link href="assets/css/best-carousel-slide.css" rel="stylesheet"/>
+<link href="assets/css/Bold-BS4-Cards-with-Hover-Effect-50.css" rel="stylesheet"/>
+<link href="assets/css/Button-Change-Text-on-Hover.css" rel="stylesheet"/>
+<link href="assets/css/Card-with-slide-up-text-effect.css" rel="stylesheet"/>
+<link href="assets/css/Carousel-Hero-1.css" rel="stylesheet"/>
+<link href="assets/css/Carousel-Hero.css" rel="stylesheet"/>
+<link href="assets/css/content_blocks_modernstyle.css" rel="stylesheet"/>
+<link href="assets/css/DG---Neon-text-effects.css" rel="stylesheet"/>
+<link href="assets/css/dh-card-image-left-dark.css" rel="stylesheet"/>
+<link href="assets/css/Filter-1.css" rel="stylesheet"/>
+<link href="assets/css/Filter.css" rel="stylesheet"/>
+<link href="assets/css/Hero-Features-Material-Design-Animation.css" rel="stylesheet"/>
+<link href="assets/css/Hero-Food-.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet"/>
+<link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet"/>
+<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+<link href="assets/css/Landing-Page---Parallax-Background---Logo-Heading-ButtonGIF.css" rel="stylesheet"/>
+<link href="assets/css/Landing-Section-with-Call-to-Action-BS4-1.css" rel="stylesheet"/>
+<link href="assets/css/Landing-Section-with-Call-to-Action-BS4.css" rel="stylesheet"/>
+<link href="assets/css/Lightbox-Gallery-No-Gutters-baguetteBox.min.css" rel="stylesheet"/>
+<link href="assets/css/Navbar-Centered-Links-icons.css" rel="stylesheet"/>
+<link href="assets/css/Navbar-Right-Links-Dark-icons.css" rel="stylesheet"/>
+<link href="assets/css/Neon-Button-1.css" rel="stylesheet"/>
+<link href="assets/css/Neon-Button.css" rel="stylesheet"/>
+<link href="assets/css/Responsive-UI-Card-02.css" rel="stylesheet"/>
+<link href="assets/css/Simple-Slider-swiper-bundle.min.css" rel="stylesheet"/>
+<link href="assets/css/Slider-laptop-laptop-Slider-1.css" rel="stylesheet"/>
+<link href="assets/css/Slider-laptop-laptop-Slider.css" rel="stylesheet"/>
+<link href="assets/css/The-Matrix-Display.css" rel="stylesheet"/>
+<style>
+body.modal-active > *:not(#emailModal):not(#navbarID) {
+    filter: blur(3px);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #0d0416;
+    color: #fff;  
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.modal-content p {
+    margin-bottom: 15px;
+}
+
+.modal-content button {
+    background-color: #7733e4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #55147a;
+}
+</style></head>
+<div class="modal" id="emailModal">
+<div class="modal-content">
+<p>Please enter your student email:</p>
+<input id="studentEmail" placeholder="e.g. name@studentdomain.edu" style="width: 100%;" type="email"/>
+<button onclick="verifyEmail()">Submit</button>
+<p id="errorMsg" style="color: red;"></p>
+<p>**We are not responsible for these events and only showcase them.**</p><p>We use your email solely for verification purposes.</p>
+    <a class="btn btn-primary" href="../" role="button">Home</a>
+    <a class="btn btn-primary" href="nightlife.html" role="button">Club Scene</a></div>
+</div>
+<body style="background: var(--bs-emphasis-color);">
+<!-- Start: Navbar Right Links -->
+<nav class="navbar navbar-expand-md py-3" id="navbarID" style="border-width: 1.4px;border-color: var(--bs-white);color: transparent;">
+<div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-lg bs-icon-circle bs-icon-semi-white d-flex justify-content-center align-items-center me-2 bs-icon" style="background: transparent;"><img height="48" src="assets/img/logo-transparent-png.png" width="67"/></span><span class="fs-6 fw-normal" style="color: var(--bs-body-bg);">EAT.EXPLORE.ENJOY</span></a><button class="navbar-toggler" data-bs-target="#navcol-2" data-bs-toggle="collapse" style="border-style: none;color: var(--bs-navbar-active-color);"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"><svg fill="none" height="1em" style="font-size: 32px;color: purple;" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z" fill="currentColor"></path>
+<path d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z" fill="currentColor"></path>
+<path d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z" fill="currentColor"></path>
+</svg></span></button>
+<div class="collapse navbar-collapse" id="navcol-2">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active" data-bss-hover-animate="flash" href="../" style="color: var(--bs-body-bg);">HOME</a></li>
+<li class="nav-item"><a class="nav-link" data-bss-hover-animate="flash" href="activity.html" style="color: var(--bs-body-bg);">ACTIVITIES</a></li>
+<li class="nav-item"><a class="nav-link" data-bss-hover-animate="flash" href="Restaurants.html" style="color: var(--bs-body-bg);">RESTAURANTS</a></li>
+<li class="nav-item dropdown" style="border-width: 1px;border-radius: 6px;"><a aria-expanded="false" class="dropdown-toggle nav-link" data-bs-auto-close="outside" data-bs-toggle="dropdown" data-bss-hover-animate="pulse" href="#" style="color: rgb(200,68,233);border-width: 1px;border-radius: 6px;">NIGHTLIFE</a>
+<div class="dropdown-menu" style="background: var(--bs-navbar-active-color);"><a class="dropdown-item" data-bss-hover-animate="pulse" href="nightlife.html" style="color: rgb(85,12,103);">Club Scene</a><a class="dropdown-item fw-semibold flash animated infinite" href="student.html" style="color: #db17ed;">STUDENT EVENTS</a></div>
+</li>
+</ul>
+</div>
+</div>
+</nav><!-- End: Navbar Right Links -->
+<header>
+<!-- Start: DG - Neon text effects -->
+<div class="container">
+<div class="row">
+<div class="col-md-12" data-aos="fade-down" data-aos-delay="200" data-aos-duration="450" data-aos-once="true">
+<!-- Start: Red -->
+<h1 class="text-uppercase neon2" style="background: transparent;"></h1><!-- End: Red -->
+<!-- Start: Hovewr effect -->
+<h1 class="text-uppercase neonhover" style="background: transparent;">dmv@night </h1><!-- End: Hovewr effect -->
+</div>
+</div>
+</div><!-- End: DG - Neon text effects -->
+</header><!-- Start: Navbar Centered Links -->
+<nav class="navbar navbar-expand-md py-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="450" data-aos-once="true" style="background: transparent;">
+<div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: green;"><svg class="bi bi-bezier" fill="currentColor" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" fill-rule="evenodd"></path>
+<path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
+</svg></span><span style="color: var(--bs-body-bg);">Pick your School<svg class="flash animated infinite" fill="currentColor" height="1em" style="font-size: 25px;" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path>
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+</svg></span></a><button class="navbar-toggler" data-bs-target="#navcol-3" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="color: var(--bs-navbar-hover-color);"><svg fill="none" height="1em" style="font-size: 32px;color: purple;" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z" fill="currentColor"></path>
+<path d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z" fill="currentColor"></path>
+<path d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z" fill="currentColor"></path>
+</svg></span></button>
+<div class="collapse navbar-collapse" id="navcol-3">
+<ul class="navbar-nav mx-auto">
+<li class="nav-item"><a class="nav-link active" href="#" style="color: var(--bs-body-bg);"></a></li>
+<li class="nav-item"><a class="nav-link" data-bss-hover-animate="bounce" href="#UMD" style="color: var(--bs-body-bg);"><span class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: transparent;"><img height="31" src="assets/img/Maryland_Terrapins_logo.svg.png" width="28"/></span>UMD</a></li>
+<li class="nav-item"><a class="nav-link" data-bss-hover-animate="bounce" href="#HOWARD" style="color: var(--bs-body-bg);"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: transparent;"><img height="32" src="assets/img/Howard_Bison_logo%20(2).svg" width="25"/></span>Howard</a></li>
+<li class="nav-item"><a class="nav-link" data-bss-hover-animate="bounce" href="#TOWSON" style="color: var(--bs-body-bg);"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: transparent;"><img height="39" src="assets/img/tigerhead-transparentbkgd-ic.png" width="50"/></span>Towson</a></li>
+<li class="nav-item"><a class="nav-link" data-bss-hover-animate="bounce" href="#BOWIE" style="color: var(--bs-body-bg);"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: transparent;"><img height="26" src="assets/img/bowie.png" width="41"/></span>Bowie</a></li>
+</ul><button class="btn btn-secondary" style="background: green;color: var(--bs-btn-disabled-color);border-style: none;" type="button">Want to add your event ?</button>
+</div>
+</div>
+</nav><!-- End: Navbar Centered Links -->
+<!-- Start: Matrix -->
+<section>
+<!-- Start: The Matrix Display -->
+<div class="matrix-bg-dark">
+<!-- Start: Typed Text -->
+<div id="tt_container">
+<p class="typed_text" id="typed_text">|</p>
+</div><!-- End: Typed Text -->
+<!-- Start: Matrix Text Display --><canvas id="the_matrix"></canvas><!-- End: Matrix Text Display -->
+</div><!-- End: The Matrix Display -->
+</section><!-- End: Matrix -->
+<!-- Start: UMD -->
+<section id="UMD">
+<!-- Start: Articles Badges -->
+<div class="container py-4 py-xl-5">
+<div class="row mb-5">
+<div class="col-md-8 col-lg-8 col-xl-6 offset-lg-0 text-center mx-auto">
+<h2 style="color: RED;">UMD</h2>
+<p class="w-lg-50" style="color: yellow;">Check out what parties/events are going on at the University of Maryland !</p>
+</div>
+</div>
+<div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+<div class="col" data-bss-hover-animate="pulse"><a href="https://www.eventbrite.com/e/warning-2-tickets-705637760537?aff=odeccpebemailcampaigns&amp;utm_source=eventbrite&amp;utm_medium=ebcampaigns&amp;utm_campaign=18833269&amp;utm_term=ctabutton&amp;mipa=ABIdvVvIvLEM_szN5j7MjU-HsSNQhv4FBKqrSlmuHN8sTgSCCM50DnkmH5d_ilN0jhAAIh6PgDWOCivqtX-d0knM5fXEaWbXObREXn5FXDzB2O6B1yL1vswohfUYVQNK0ZRGdr4bdwKrYs-_PkO6oewPS81y04TI4371vC-vpLX_vlD36eRvTxe_JqBAd7P5Zj48S_YgrJsl9tzUO-BSwet-jGRtlzZrRbrISWf_vV02b0wyKa9CTR5_M62tn0logyv6-iILSKRwzSjKbxFsovewzz4y26tEDA">
+<div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Register</span>
+<h4 style="color: red;">WARNING 2</h4>
+<p style="color: yellow;">UMD VS BOWIE VS HOWARD !!!!!!!    15 Min from Howard &amp; Bowie</p>
+<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" height="50" src="assets/img/Maryland_Terrapins_logo.svg.png" width="50"/>
+<div>
+<p class="fw-bold mb-0" style="color: red;">DATE: SAT SEPT 2. 10PM</p>
+</div>
+</div>
+</div>
+</a></div>
+<div class="col" data-bss-hover-animate="pulse"><a href="https://www.eventbrite.com/e/slumber-party-3-tickets-705645634087?aff=odeccpebemailcampaigns&amp;utm_source=eventbrite&amp;utm_medium=ebcampaigns&amp;utm_campaign=18833269&amp;utm_term=ctabutton&amp;mipa=ABIdvVvAxNskSQLQevvc6cenUK1Xy14vLxzsbyxbvhGSOt3aj7XAuShyI8v-NVv-2WyOSIFI3j4zgkYtII5wsZDLjSc_7N1qVpDoPQY4NsQajYOTSojf0LhHL-TEyJWPp-4GzT_a1XTFXhvza2oIEaEmkuHiLclpz51lV8BrCZwicquLHvJpZRytof5xpT9Tzh1e6lzUrPJkpBghT6D9ibhRUpBPYcYHxAe_hbWN5Xdj-walujdPTtKFvsVvFk23vIBPl4oVygDzaxXe-PRoJRRI6dERSTwwWQ">
+<div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Register</span>
+<h4 style="color: red;">SLUMBER PARTY 3</h4>
+<p style="color: yellow;">BIGGEST PAJAMA PARTY OF THE YEAR !</p>
+<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" height="50" src="assets/img/Maryland_Terrapins_logo.svg.png" width="50"/>
+<div>
+<p class="fw-bold mb-0"style="color: red;">DATE: SUN SEPT 3. 10PM</p>
+</div>
+</div>
+</div>
+</a></div>
+<div class="col" data-bss-hover-animate="pulse">
+<div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Article</span>
+<h4 style="color: red;">Branden's mini kickback</h4>
+<p style="color: yellow;">Check out Branden's newest event scheduled.</p>
+<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" height="50" src="assets/img/Maryland_Terrapins_logo.svg.png" width="50"/>
+<div>
+<p class="fw-bold mb-0"style="color: red;">DATE: THUR SEPT 7.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- End: Articles Badges -->
+</section><!-- End: UMD -->
+<!-- Start: HOWARD -->
+<section id="HOWARD">
+<!-- Start: Articles Badges -->
+<div class="container py-4 py-xl-5">
+<div class="row mb-5">
+<div class="col-md-8 col-xl-6 text-center mx-auto">
+<h2 style="color: blue;">Howard University</h2>
+<p class="w-lg-50" style="color: white;">Check out what parties/events are going on at the Illustrious Howard University!</p>
+</div>
+</div>
+<div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+<div class="col"><a href="https://www.eventbrite.com/e/warning-2-tickets-705637760537?aff=odeccpebemailcampaigns&amp;utm_source=eventbrite&amp;utm_medium=ebcampaigns&amp;utm_campaign=18833269&amp;utm_term=ctabutton&amp;mipa=ABIdvVvIvLEM_szN5j7MjU-HsSNQhv4FBKqrSlmuHN8sTgSCCM50DnkmH5d_ilN0jhAAIh6PgDWOCivqtX-d0knM5fXEaWbXObREXn5FXDzB2O6B1yL1vswohfUYVQNK0ZRGdr4bdwKrYs-_PkO6oewPS81y04TI4371vC-vpLX_vlD36eRvTxe_JqBAd7P5Zj48S_YgrJsl9tzUO-BSwet-jGRtlzZrRbrISWf_vV02b0wyKa9CTR5_M62tn0logyv6-iILSKRwzSjKbxFsovewzz4y26tEDA">
+<div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Register</span>
+<h4 style="color: blue;">WARNING 2</h4>
+<p style="color: white;">UMD VS BOWIE VS HOWARD !!!!!!!  15 Min from Howard &amp; Bowie</p>
+<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" height="50" src="assets/img/Howard_Bison_logo%20(2).svg" width="50"/>
+<div>
+<p class="fw-bold mb-0"><strong><span style="font-style: normal !important;"style="color: blue;">DATE: SAT SEPT 2. 10PM</span></strong></p>
+</div>
+</div>
+</div>
+</a></div>
+<div class="col"><a href="https://www.eventbrite.com/e/warning-2-tickets-705637760537?aff=odeccpebemailcampaigns&amp;utm_source=eventbrite&amp;utm_medium=ebcampaigns&amp;utm_campaign=18833269&amp;utm_term=ctabutton&amp;mipa=ABIdvVvIvLEM_szN5j7MjU-HsSNQhv4FBKqrSlmuHN8sTgSCCM50DnkmH5d_ilN0jhAAIh6PgDWOCivqtX-d0knM5fXEaWbXObREXn5FXDzB2O6B1yL1vswohfUYVQNK0ZRGdr4bdwKrYs-_PkO6oewPS81y04TI4371vC-vpLX_vlD36eRvTxe_JqBAd7P5Zj48S_YgrJsl9tzUO-BSwet-jGRtlzZrRbrISWf_vV02b0wyKa9CTR5_M62tn0logyv6-iILSKRwzSjKbxFsovewzz4y26tEDA">
+<div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Register</span>
+<h4 style="color: blue;">SLUMBER PARTY 3</h4>
+<p style="color: white;">BIGGEST PAJAMA PARTY OF THE YEAR !</p>
+<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" height="50" src="assets/img/Howard_Bison_logo%20(2).svg" width="50"/>
+<div>
+<p class="fw-bold mb-0"><strong><span style="font-style: normal !important;"style="color: blue;">DATE: SUN SEPT 3. 10PM</span></strong></p>
+</div>
+</div>
+</div>
+</a></div>
+<div class="col">
+<div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Article</span>
+<h4 style="color: blue;">Kari's kickback</h4>
+<p style="color: white;">More info coming soon...</p>
+<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" height="50" src="assets/img/Howard_Bison_logo%20(2).svg" width="50"/>
+<div>
+<p class="fw-bold mb-0"style="color: blue;">DATE: THUR SEPT 7.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- End: Articles Badges -->
+</section><!-- End: HOWARD -->
+<!-- Start: TOWSON -->
+<section id="TOWSON">
+<!-- Start: Articles Badges -->
+<div class="container py-4 py-xl-5">
+<div class="row mb-5">
+<div class="col-md-8 col-xl-6 text-center mx-auto">
+<h2 style="color: orange;">Towson University</h2>
+<p class="w-lg-50" style="color: white;">Check out what parties/events are going on at Towson #TU!</p>
+</div>
+</div>
+<div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+<div class="col">
+<div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Article</span>
+<h4 style="color: orange;">Tori's Birthday Bash </h4>
+<p style="color: yellow;">More info coming soon...</p>
+<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" height="50" src="assets/img/tigerhead-transparentbkgd-ic.png" width="50"/>
+<div>
+<p class="fw-bold mb-0"style="color: orange;">DATE: Friday SEPT 8th.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- End: Articles Badges -->
+</section><!-- End: TOWSON -->
+<!-- Start: BOWIE -->
+<section id="BOWIE">
+<!-- Start: Articles Badges -->
+<div class="container py-4 py-xl-5">
+<div class="row mb-5">
+<div class="col-md-8 col-xl-6 text-center mx-auto">
+<h2 style="color: orange;">Bowie State University</h2>
+<p class="w-lg-50" style="color: var(--bs-body-bg);">Check out what parties/events are going on at the Bowie #GoDogs</p>
+</div>
+</div>
+<div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+<div class="col">
+<div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Article</span>
+<h4 style="color: orange;">No parties yet :(</h4>
+<p style="color: white;">Check out Branden's newest event scheduled.</p>
+<div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" height="50" src="assets/img/bowie.png" width="50"/>
+<div>
+<p class="fw-bold mb-0"style="color: orange;">DATE: THUR SEPT 7.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="p-4">
+<h4 style="color: orange;">Want to add one ?</h4>
+<p style="color: white;"><a href="#">Click here</a></p>
+<div class="d-flex">
+<div></div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- End: Articles Badges -->
+</section><!-- End: BOWIE -->
+<!-- Start: Footer Basic -->
+<footer class="text-center">
+<div class="container text-muted py-4 py-lg-5">
+<ul class="list-inline">
+<li class="list-inline-item me-4"><a class="link-secondary" href="../">Home</a></li>
+<li class="list-inline-item me-4"><a class="link-secondary" href="contact.html">Contact</a></li>
+<li class="list-inline-item"><a class="link-secondary" href="privacy.html">Privacy</a></li>
+</ul>
+<ul class="list-inline">
+<li class="list-inline-item me-4"><svg class="bi bi-facebook" fill="currentColor" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+</svg></li>
+<li class="list-inline-item me-4"><svg class="bi bi-twitter" fill="currentColor" height="1em" style="color: rgba(33, 37, 41, 0.75);" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+</svg></li>
+<li class="list-inline-item"><a href="https://www.instagram.com/dmv.explorer/" style="color: rgba(33,37,41,0.75);"><svg class="bi bi-instagram" fill="currentColor" height="1em" style="color: rgba(33,37,41,0.75);" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+</svg></a></li>
+</ul>
+<p class="mb-0">Copyright © 2023 dmvexplorer</p>
+</div>
+</footer><!-- End: Footer Basic -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/aos.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/-Filterable-Gallery-with-Lightbox-BS4--Filterable-Gallery.js"></script>
+<script src="assets/js/college.js"></script>
+<script src="assets/js/--mp---Multiple-items-slider-responsive-test-1.js"></script>
+<script src="assets/js/--mp---Multiple-items-slider-responsive-test.js"></script>
+<script src="assets/js/Animated-numbers-section-script.js"></script>
+<script src="assets/js/Animated-Typing-With-Blinking-Animated-Type-Heading.js"></script>
+<script src="assets/js/Card-hover-affect-2-card-1.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/Lightbox-Gallery-No-Gutters-baguetteBox.min.js"></script>
+<script src="assets/js/Lightbox-Gallery-No-Gutters-Lightbox-Gallery.js"></script>
+<script src="assets/js/Portfolio-with-Category-switcher-main.js"></script>
+<script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+<script src="assets/js/Simple-Slider.js"></script>
+<script src="assets/js/Slider-laptop-laptop-Slider.js"></script>
+<script src="assets/js/The-Matrix-Display-matrix-1.js"></script>
+<script>
+window.onload = function() {
+    // Display the modal on page load
+    document.getElementById('emailModal').style.display = 'block';
+    document.body.classList.add('modal-active');
+}
+
+function verifyEmail() {
+    var email = document.getElementById('studentEmail').value;
+    var errorMsg = document.getElementById('errorMsg');
+
+    // Regular expression to check if the email is in the format of username@subdomain.university.edu
+    var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+\.[Ee][Dd][Uu]$/;
+
+    if (regex.test(email)) {
+        document.getElementById('emailModal').style.display = 'none';
+        document.body.classList.remove('modal-active');
+    } else {
+        errorMsg.textContent = 'Please enter a valid student email!';
+    }
+}
+
+
+
+</script>
+
+
+</body>
+</html>
